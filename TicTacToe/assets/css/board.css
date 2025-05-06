@@ -1,0 +1,59 @@
+/* Main Code */
+#board
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: auto;
+    height: 50vh;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+}
+
+/* Square */
+.square
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 34%;
+    position: relative;
+    bottom: 0;
+    transition: bottom .2s, scale .2s; 
+}
+
+.square:hover
+{
+    z-index: 2;
+    scale: 1.05;
+    bottom: .5em;
+    outline: .1em solid white;
+}
+
+.square.active
+{
+    z-index: 2;
+    scale: 1.05;
+    bottom: .5em;
+    outline: .1em solid rgb(36, 36, 255);
+}
+
+.square-color-one
+{
+    background-color: #90C67C;   
+}
+
+.square-color-two
+{
+    background-color: #328E6E;
+}
+
+@media screen and (min-width: 768px)
+{
+    #board
+    {
+        height: 60vh;
+    }
+}

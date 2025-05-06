@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Tic Tac Toe</title>
+
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/game.css">
+    <link rel="stylesheet" href="assets/css/board.css">
+
+</head>
+<body>
+
+    <!-- HTML -->
+    
+    <!-- Audio -->
+    <audio id="selectAudio" src="assets/sound/select.mp3"></audio>
+    <audio id="victoryAudio" src="assets/sound/victory.mp3"></audio>
+
+    <!-- Screen -->
+    <div id="screen-container">
+
+    </div>
+
+    <!-- Game Menu -->
+    <div id="menu-container">
+        <!-- Header ( menu bar ) -->
+        <div class="menu-header">
+            <button onclick="openMenu()" id="menu-trigger">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </div>
+
+        <!-- Content -->
+        <div class="menu-content">
+            <button onclick="resetScore()"><img src="assets/icon/icons8-reset-100.png"> <h2>Reset Score</h2></button>
+        </div>
+
+    </div>
+
+    <!-- Game -->
+    <div class="game-container">
+        <div id="board"></div>
+    </div>
+
+    <!-- Game HUD -->
+    <div class="hud-container">
+        
+        <!-- Left -->
+        <div id="player-box-1">P1</div>
+
+        <!-- Center -->
+        <div class="game-score">
+            <h2 id="player-1-score"></h2>
+            <h2>|</h2>
+            <h2 id="player-2-score"></h2>
+        </div>
+
+        <!-- Right -->
+        <div id="player-box-2">P2</div>
+        
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/javascript/player.js"></script>
+    <script src="assets/javascript/board.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/menu.js"></script>
+
+</body>
+</html>
