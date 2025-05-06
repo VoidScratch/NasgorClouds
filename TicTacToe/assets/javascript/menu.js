@@ -10,7 +10,7 @@ function openMenu()
     if(menuStatus == false)
     {
         menuContainer.style.height = "100vh";
-        menuContainer.style.backgroundColor = "whitesmoke";
+        menuContainer.style.backgroundColor = "#E4EFE7";
         menuStatus = true;
     } else
     {
