@@ -71,3 +71,19 @@ function resetBoard()
 
     renderFilledBoard();
 }
+
+// Active square
+function activeSquare(one, two, three)
+{
+    document.getElementById(`board-square-${one}`).classList.add("active");
+    document.getElementById(`board-square-${two}`).classList.add("active");
+    document.getElementById(`board-square-${three}`).classList.add("active");
+}
+
+function deActiveSquare()
+{
+    for(let i = 0; i < filledBoard.length; i++)
+    {
+        document.getElementById(`board-square-${i}`).classList.remove("active");
+    }
+}

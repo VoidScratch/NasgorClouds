@@ -35,10 +35,9 @@
 
 .square.active
 {
-    z-index: 2;
-    scale: 1.05;
-    bottom: .5em;
-    outline: .1em solid rgb(36, 36, 255);
+    z-index: 4;
+    scale: 1.025;
+    bottom: .25em;
 }
 
 .square-color-one

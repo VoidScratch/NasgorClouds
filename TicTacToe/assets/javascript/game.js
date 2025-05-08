@@ -52,7 +52,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(0, 1, 2);
     }
 
     if(filledBoard[3][1] == 1 && filledBoard[4][1] == 1 && filledBoard[5][1] == 1)
@@ -60,7 +60,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(3, 4, 5);
     }
 
     if(filledBoard[6][1] == 1 && filledBoard[7][1] == 1 && filledBoard[8][1] == 1)
@@ -68,7 +68,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(6, 7, 8);
     }
 
     if(filledBoard[0][1] == 1 && filledBoard[4][1] == 1 && filledBoard[8][1] == 1)
@@ -76,7 +76,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(0, 4, 8);
     }
 
     if(filledBoard[2][1] == 1 && filledBoard[4][1] == 1 && filledBoard[6][1] == 1)
@@ -84,7 +84,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(2, 4, 6);
     }
 
     if(filledBoard[0][1] == 1 && filledBoard[3][1] == 1 && filledBoard[6][1] == 1)
@@ -92,7 +92,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(0, 3, 6);
     }
     
     if(filledBoard[1][1] == 1 && filledBoard[4][1] == 1 && filledBoard[7][1] == 1)
@@ -100,7 +100,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(1, 4, 7);
     }
 
     if(filledBoard[2][1] == 1 && filledBoard[5][1] == 1 && filledBoard[8][1] == 1)
@@ -108,7 +108,7 @@ function checkCondition()
         onGame = false;
         playerWins(1);
         draw = false;
-        resetBoard();
+        activeSquare(2, 5, 8);
     }
 
     // Player 2 Wins
@@ -117,7 +117,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(0, 1, 2);
     }
 
     if(filledBoard[3][1] == 2 && filledBoard[4][1] == 2 && filledBoard[5][1] == 2)
@@ -125,7 +125,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(3, 4, 5);
     }
 
     if(filledBoard[6][1] == 2 && filledBoard[7][1] == 2 && filledBoard[8][1] == 2)
@@ -133,7 +133,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(6, 7, 8);
     }
 
     if(filledBoard[0][1] == 2 && filledBoard[4][1] == 2 && filledBoard[8][1] == 2)
@@ -141,7 +141,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(0, 4, 1);
     }
 
     if(filledBoard[2][1] == 2 && filledBoard[4][1] == 2 && filledBoard[6][1] == 2)
@@ -149,7 +149,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(2, 4, 6);
     }
 
     if(filledBoard[0][1] == 2 && filledBoard[3][1] == 2 && filledBoard[6][1] == 2)
@@ -157,7 +157,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(0, 3, 6);
     }
     
     if(filledBoard[1][1] == 2 && filledBoard[4][1] == 2 && filledBoard[7][1] == 2)
@@ -165,7 +165,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(1, 4, 7);
     }
 
     if(filledBoard[2][1] == 2 && filledBoard[5][1] == 2 && filledBoard[8][1] == 2)
@@ -173,7 +173,7 @@ function checkCondition()
         onGame = false;
         playerWins(2);
         draw = false;
-        resetBoard();
+        activeSquare(2, 5, 8);
     }
 
     // Draw Condition
@@ -181,7 +181,7 @@ function checkCondition()
     {
         onGame = false;
         turn = 0;
-        resetBoard();
+        activeSquare();
     }
 
     updateScore();

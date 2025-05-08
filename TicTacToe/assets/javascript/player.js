@@ -38,11 +38,13 @@ function playerWins(playerNum)
     if(playerNum == 1)
     {
         playerOne += 1;
+        winScreen(1);
         changePlayer(2);
     }
     else if(playerNum == 2)
     {
         playerTwo += 1;
+        winScreen(2);
         changePlayer(1);
     }
 

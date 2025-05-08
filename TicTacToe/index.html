@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/game.css">
     <link rel="stylesheet" href="assets/css/board.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
 
 </head>
 <body>
@@ -22,8 +23,11 @@
     <audio id="victoryAudio" src="assets/sound/victory.mp3"></audio>
 
     <!-- Screen -->
-    <div id="screen-container">
-
+    <div id="screenContainer">
+        <div class="screen-content">
+            <h2 id="screenText"></h2>
+            <button onclick="newGame()" >NEW GAME</button>
+        </div>
     </div>
 
     <!-- Game Menu -->
@@ -74,6 +78,7 @@
     <script src="assets/javascript/board.js"></script>
     <script src="assets/javascript/game.js"></script>
     <script src="assets/javascript/menu.js"></script>
+    <script src="assets/javascript/screen.js"></script>
 
 </body>
 </html>
